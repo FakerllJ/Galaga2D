@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 8
   limitX: 8
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 7659175653108322597, guid: b48968244da3d9b4b87b11cb8ef340fa, type: 3}
   firePoint: {fileID: 123412544}
   doubleShotCooldown: 0.25
   shieldVisual: {fileID: 876765422}

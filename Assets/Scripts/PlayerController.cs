@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float doubleShotCooldown = 0.25f;
+    public int maxBullets = 3;
 
     [Header("Extras")]
     public GameObject shieldVisual;
@@ -18,7 +19,6 @@ public class PlayerController : MonoBehaviour
     public AudioClip shootSound;
     public AudioClip hitSound;
 
-    GameObject currentBullet;
     SpriteRenderer sr;
     float doubleShotUntil;
     float shieldUntil;
@@ -64,12 +64,12 @@ public class PlayerController : MonoBehaviour
             Instantiate(bulletPrefab, pos + Vector3.left * 0.3f, Quaternion.identity);
             Instantiate(bulletPrefab, pos + Vector3.right * 0.3f, Quaternion.identity);
         }
-        else                                        // normal: so 1 tiro por vez
+        else // normal: ate maxBullets tiros na tela
         {
-            if (currentBullet != null) return;
-            currentBullet = Instantiate(bulletPrefab, pos, Quaternion.identity);
+            if (GameObject.FindGameObjectsWithTag("PlayerBullet").Length >= maxBullets) return;
+            Instantiate(bulletPrefab, pos, Quaternion.identity);
         }
-        Sfx.Play(shootSound);
+         Sfx.Play(shootSound);
     }
 
     public void ActivateDoubleShot(float seconds)
