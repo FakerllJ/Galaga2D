@@ -1185,8 +1185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   enemyA: {fileID: 6929780113178519707, guid: abb767192fcb5d14abe9ec19ce7425a5, type: 3}
-  enemyB: {fileID: 0}
-  enemyElite: {fileID: 0}
+  enemyB: {fileID: 6929780113178519707, guid: 20f491bf8ab235c4ca7dfcbdcb8de96d, type: 3}
+  enemyElite: {fileID: 6929780113178519707, guid: 3debae3a0ff585047af9ad6e30b1f99b, type: 3}
   bossPrefab: {fileID: 0}
   powerUps: []
   spawnY: 6
