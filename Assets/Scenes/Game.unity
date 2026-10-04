@@ -1906,7 +1906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &876765423
 Transform:
   m_ObjectHideFlags: 0
@@ -2763,7 +2763,7 @@ MonoBehaviour:
   enemyA: {fileID: 6929780113178519707, guid: abb767192fcb5d14abe9ec19ce7425a5, type: 3}
   enemyB: {fileID: 6929780113178519707, guid: 20f491bf8ab235c4ca7dfcbdcb8de96d, type: 3}
   enemyElite: {fileID: 6929780113178519707, guid: 3debae3a0ff585047af9ad6e30b1f99b, type: 3}
-  bossPrefab: {fileID: 0}
+  bossPrefab: {fileID: 5181815444643196331, guid: 608f570ed765356499a5b2a52866a331, type: 3}
   powerUps:
   - {fileID: 2387842648111615936, guid: 93350679eb3cb364683e56e5d78e245e, type: 3}
   - {fileID: 8653148905465544096, guid: d077614d38f24d54da26493ed01994c2, type: 3}
