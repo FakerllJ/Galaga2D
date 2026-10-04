@@ -1906,7 +1906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &876765423
 Transform:
   m_ObjectHideFlags: 0
@@ -1916,8 +1916,8 @@ Transform:
   m_GameObject: {fileID: 876765422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1664674571}
@@ -1971,12 +1971,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcf05293d43a6404d8cca3cda0b4b882, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2764,7 +2764,10 @@ MonoBehaviour:
   enemyB: {fileID: 6929780113178519707, guid: 20f491bf8ab235c4ca7dfcbdcb8de96d, type: 3}
   enemyElite: {fileID: 6929780113178519707, guid: 3debae3a0ff585047af9ad6e30b1f99b, type: 3}
   bossPrefab: {fileID: 0}
-  powerUps: []
+  powerUps:
+  - {fileID: 2387842648111615936, guid: 93350679eb3cb364683e56e5d78e245e, type: 3}
+  - {fileID: 8653148905465544096, guid: d077614d38f24d54da26493ed01994c2, type: 3}
+  - {fileID: 8455290925614350501, guid: 8fc6fc0b532344440a7a21a1fdadd4dd, type: 3}
   spawnY: 6
   limitX: 6
 --- !u!1 &1443256014
