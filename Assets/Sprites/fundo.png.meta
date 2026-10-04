@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 938eedb63310dec4d9a76aff450da940
+guid: fcd1ecb53be61764e956e52188aaeebd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6717884257390833292
-    second: Shield_0
+      213: 7285104100621103090
+    second: fundo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shield_0
+      name: fundo_0
       rect:
         serializedVersion: 2
-        x: 275
-        y: 242
-        width: 474
-        height: 573
+        x: 0
+        y: 0
+        width: 1672
+        height: 941
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 471d70c5cd745c2a0800000000000000
-      internalID: -6717884257390833292
+      spriteID: 2ff2345d493e91560800000000000000
+      internalID: 7285104100621103090
       vertices: []
       indices: 
       edges: []
@@ -127,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shield_0: -6717884257390833292
+      fundo_0: 7285104100621103090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
