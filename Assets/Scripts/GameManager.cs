@@ -32,14 +32,17 @@ public class GameManager : MonoBehaviour
     int highScore;
     bool gameEnded;
     bool paused;
-
+    
     void Awake()
     {
         Instance = this;
         Time.timeScale = 1f;
         highScore = PlayerPrefs.GetInt("HighScore", 0);
     }
-
+    void MostrarMouse(bool mostrar)
+    {
+        Cursor.visible = mostrar;
+    }
     void Start()
     {
         Show(gameOverPanel, false);
@@ -47,6 +50,7 @@ public class GameManager : MonoBehaviour
         Show(pausePanel, false);
         PlayMusic(level >= 4 ? bossMusic : levelMusic);
         UpdateHUD();
+        MostrarMouse(false);
     }
 
     void Update()
@@ -92,6 +96,7 @@ public class GameManager : MonoBehaviour
         Sfx.Play(gameOverSound);
         Show(gameOverPanel, true);
         Time.timeScale = 0f;
+        MostrarMouse(true);
     }
 
     public void Victory()
@@ -100,6 +105,7 @@ public class GameManager : MonoBehaviour
         PlayMusic(victoryMusic);
         Show(victoryPanel, true);
         Time.timeScale = 0f;
+        MostrarMouse(true);
     }
 
     public void TogglePause()
@@ -107,6 +113,7 @@ public class GameManager : MonoBehaviour
         paused = !paused;
         Time.timeScale = paused ? 0f : 1f;
         Show(pausePanel, paused);
+        MostrarMouse(paused);
     }
 
     // Funcoes chamadas pelos botoes (On Click)
@@ -117,6 +124,7 @@ public class GameManager : MonoBehaviour
 
     public void GoToMenu()
     {
+        MostrarMouse(true);
         SceneManager.LoadScene("Menu");
     }
 

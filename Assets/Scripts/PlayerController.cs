@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         if (Time.timeScale == 0f) return;   // jogo pausado ou acabou
 
         Move();
-        if (Input.GetKeyDown(KeyCode.Space)) Shoot();
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) Shoot();
         UpdateVisuals();
     }
 
